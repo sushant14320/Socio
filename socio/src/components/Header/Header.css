@@ -1,9 +1,12 @@
 .HeaderNav {
     padding: 70px;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px 8px #635f5f;
     padding-bottom: 30px;
     /* background-color: rgba(29, 27, 27, 0.829); */
     background-color: white;
+    width: 100%;
+    
+    
     
     
 }
@@ -11,14 +14,14 @@
 .Navlink_2{
     display: block;
     /* color: white; */
-    color: black;
+    color: white;
     text-align: center;
     padding: 9px 48px;
     font-size: 25px;
     float: right;
     text-decoration: none;
     margin-top: -39px;
-    border: 1px solid;
+    border: 3px solid;
     border-radius: 37px;
     margin-left: 35px;
 }
@@ -42,7 +45,7 @@
 		background-size: auto auto;
 		background-clip: border-box;
 		background-size: 200% auto;
-		color: #fff;
+		color: rgb(7, 6, 6);
 		background-clip: text;
 		/* text-fill-color: transparent; */
 		-webkit-background-clip: text;

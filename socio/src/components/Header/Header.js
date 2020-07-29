@@ -15,11 +15,12 @@ class Header extends Component {
         return ( 
             <div className="HeaderNav">
                 <h1 className="logo">
-                    <em>S</em>
+                    {/* <em>S</em>
                     <em className="planet left">O</em>
                     <em>C</em>
                     <em className="planet right">I</em>
-                    <em>O</em>
+                    <em>O</em> */}
+                    SOCIO
                 </h1>
                 <NavLink className="Navlink_2" to="SignUp">Signup</NavLink>
                 
