@@ -9,6 +9,7 @@ import {
     faTwitter,
     faInstagram
   } from "@fortawesome/free-brands-svg-icons";
+import Signup from '../Signup/Signup';
 
 
 
@@ -46,39 +47,49 @@ class Login extends Component {
 <div>
    <button id='btnLogIn'>Login</button>
 </div>   
-
+<br></br>
  <a href={'#'} id='forgetPass'>Forget Password ?</a>
+ <br></br>
 
 {/* Sign with Social handle */}
  <div id='lo'>
-        <p>Or Sign in with</p>
+        <p>Or Sign in with</p><br></br>
       <a
         href="https://www.youtube.com/c/jamesqquick"
         className="youtube social"
       >
         <FontAwesomeIcon icon={faYoutube} size="2x" />
       </a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
       <a
         href="https://www.facebook.com/learnbuildteach/"
         className="facebook social"
       >
         <FontAwesomeIcon icon={faFacebook} size="2x" />
       </a>
+
+      &nbsp; &nbsp; &nbsp; &nbsp;
+
       <a href="https://www.twitter.com/jamesqquick" className="twitter social">
         <FontAwesomeIcon icon={faTwitter} size="2x" />
       </a>
+
+      &nbsp; &nbsp; &nbsp; &nbsp;
+
       <a
         href="https://www.instagram.com/learnbuildteach"
         className="instagram social"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>
+      
     
  </div>
-
+<br></br><br></br>
  
 {/* If user don't have an account */}
-<p>Don't have an account? <a href={'#'} style={{textDecoration:'none'}}>Sign Up</a></p>
+<p className="No_acc">Don't have an account? <a href={<Signup/>} style={{textDecoration:'none'}}>Sign Up</a></p>
+<br></br><br></br>
  </form> 
    </Container>
 

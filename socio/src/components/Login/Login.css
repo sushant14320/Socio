@@ -27,7 +27,7 @@ width:30%;
   margin-top:1em;
   color:white;
   font-size: large;
-  background-color:black;
+  background-color:greenyellow;
   padding :1em;
   width:100%;
   border-radius: 2em;
@@ -42,7 +42,7 @@ width:30%;
 {
   text-decoration: none;
   position: relative;
-  left:10em;
+  left:13em;
 }
 
 
@@ -60,4 +60,9 @@ label{
     font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 5px 2px 4px #330c0c;
+}
+
+.No_acc{
+    margin-left: 150px;
+    letter-spacing: 2px;
 }
