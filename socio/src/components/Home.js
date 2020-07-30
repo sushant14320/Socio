@@ -1,8 +1,8 @@
 import React,{Component}from 'react';
 import '../components/Home.css';
-import {Link} from'react-router-dom';
+
 import pic from './images/allapps.jpg'
-import smoke from './images/smoke.mp4'
+
 import cursor from './images/cor.PNG'
 
 

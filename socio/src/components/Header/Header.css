@@ -9,7 +9,9 @@
     
     
     
+    
 }
+
 
 .Navlink_2{
     display: block;
@@ -21,7 +23,7 @@
     float: right;
     text-decoration: none;
     margin-top: -39px;
-    border: 3px solid;
+    border: 3px solid gold;
     border-radius: 37px;
     margin-left: 35px;
 }
