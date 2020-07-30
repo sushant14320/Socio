@@ -22,9 +22,9 @@ class Header extends Component {
                     <em>O</em> */}
                     SOCIO
                 </h1>
-                <NavLink className="Navlink_2" to="SignUp">Signup</NavLink>
+                <NavLink className="Navlink" id="onhoverS" to="SignUp">Signup</NavLink>
                 
-                <NavLink className="Navlink_2" to="/Login">
+                <NavLink className="Navlink" to="/Login">
                      Login
                 </NavLink>
             </div>

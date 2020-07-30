@@ -13,7 +13,7 @@
 }
 
 
-.Navlink_2{
+.Navlink{
     display: block;
     /* color: white; */
     color: white;
@@ -23,12 +23,21 @@
     float: right;
     text-decoration: none;
     margin-top: -39px;
-    border: 3px solid gold;
+    border: 3px solid #cfcfcf;
     border-radius: 37px;
     margin-left: 35px;
+    cursor: pointer;
 }
 
+/* .Navlink:hover{
+    background-color: red;
+    overflow: hidden;
+} */
 
+ #onhoverS:hover{
+    background-color: rgba(243, 237, 237, 0.9);
+    color: green;
+}
 
 .logo{
     display: block;

@@ -8,6 +8,7 @@
 
 .welcome{
 color: white;
+margin-left: 142px;
 }
 
 label{
@@ -16,13 +17,22 @@ label{
 
 #standard-basis{
     color: white;
-    background-color: white;
+    /* background-color: white; */
+    border: 2px solid silver;
 }
 
 #sociologo
 {
-width:30%;
+width:35%;
+margin-left: 178px;
+
 }
+
+#logoSocio{
+    background-color: white;
+}
+
+
 #btnLogIn{
   margin-top:1em;
   color:white;
@@ -65,4 +75,9 @@ label{
 .No_acc{
     margin-left: 150px;
     letter-spacing: 2px;
+}
+
+#lo{
+    color: white;
+    
 }

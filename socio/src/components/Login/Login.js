@@ -1,13 +1,14 @@
 import React,{Component}from 'react';
 import './Login.css';
 import { Container } from '@material-ui/core';
+import logo from '../SocioLogo.png';
 import TextField from '@material-ui/core/TextField';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faYoutube,
     faFacebook,
     faTwitter,
-    faInstagram
+    
   } from "@fortawesome/free-brands-svg-icons";
 import Signup from '../Signup/Signup';
 
@@ -25,7 +26,9 @@ class Login extends Component {
                <Container maxWidth='sm'>
         {/* <p>Post Anywhere Anytime...</p> */}
          <h1 className="welcome">Welcome Login</h1>
-         {/* <img src={socio} id='sociologo'/> */}
+         <div id="logoSocio">
+         <img src={logo} alt="logo" id='sociologo'/>
+         </div>
  
          <p className="para_login">Login to your registered account</p>
 <br></br>
@@ -58,7 +61,7 @@ class Login extends Component {
         href="https://www.youtube.com/c/jamesqquick"
         className="youtube social"
       >
-        <FontAwesomeIcon icon={faYoutube} size="2x" />
+        <FontAwesomeIcon icon={faYoutube} size="2x" style={{color:'red'}}/>
       </a>
       &nbsp; &nbsp; &nbsp; &nbsp;
       <a
@@ -71,17 +74,17 @@ class Login extends Component {
       &nbsp; &nbsp; &nbsp; &nbsp;
 
       <a href="https://www.twitter.com/jamesqquick" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size="2x" />
+        <FontAwesomeIcon icon={faTwitter} size="2x" style={{color:'rgb(65, 154, 184)'}} />
       </a>
 
       &nbsp; &nbsp; &nbsp; &nbsp;
 
-      <a
+      {/* <a
         href="https://www.instagram.com/learnbuildteach"
         className="instagram social"
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
-      </a>
+      </a> */}
       
     
  </div>
