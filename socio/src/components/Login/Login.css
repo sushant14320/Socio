@@ -8,11 +8,19 @@
 
 .welcome{
 color: white;
-margin-left: 142px;
+margin-left: 174px;
 }
 
 label{
     color: white;
+}
+
+#email{
+    color: rgba(202, 198, 198,0.6);
+}
+
+#password{
+    color: rgba(202, 198, 198,0.6);
 }
 
 #standard-basis{

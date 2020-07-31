@@ -1,0 +1,92 @@
+.Maincontainer
+{
+    color: white;
+    background-color:whitesmoke;
+    width: 100%;
+   height: auto;
+}
+
+.welcome{
+color: white;
+margin-left: 142px;
+}
+
+label{
+    color: white;
+}
+
+ #email{
+    color: rgba(202, 198, 198,0.6);
+}
+
+#password{
+    color: rgba(202, 198, 198,0.6);
+}
+
+
+#standard-basis{
+    color: white;
+    /* background-color: white; */
+    border: 2px solid silver;
+}
+
+#sociologo
+{
+width:35%;
+margin-left: 178px;
+
+}
+
+#logoSocio{
+    background-color: white;
+}
+
+
+#btnLogIn{
+  margin-top:1em;
+  color:white;
+  font-size: large;
+  background-color:greenyellow;
+  padding :1em;
+  width:100%;
+  border-radius: 2em;
+  margin-left: -49px;
+  box-shadow: 2px 1px grey;
+  cursor: pointer;
+}
+#btnLogIn:hover{
+  background-color:#081121 ;
+}
+#forgetPass
+{
+  text-decoration: none;
+  position: relative;
+  left:13em;
+}
+
+
+.Field_section{
+    border: 2px solid gold;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+label{
+    color: white;
+}
+
+.para_login{
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 5px 2px 4px #330c0c;
+}
+
+.No_acc{
+    margin-left: 150px;
+    letter-spacing: 2px;
+}
+
+#lo{
+    color: white;
+    
+}

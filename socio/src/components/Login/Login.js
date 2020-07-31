@@ -5,7 +5,7 @@ import logo from '../SocioLogo.png';
 import TextField from '@material-ui/core/TextField';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faYoutube,
+    
     faFacebook,
     faTwitter,
     
@@ -25,7 +25,7 @@ class Login extends Component {
                <div className='Maincontainer'>
                <Container maxWidth='sm'>
         {/* <p>Post Anywhere Anytime...</p> */}
-         <h1 className="welcome">Welcome Login</h1>
+         <h1 className="welcome">Login here</h1>
          <div id="logoSocio">
          <img src={logo} alt="logo" id='sociologo'/>
          </div>
@@ -38,12 +38,12 @@ class Login extends Component {
 <section className="Field_section">
             
     <div>
-        <label>Email</label><br></br>
+        <label id="email">Email</label><br></br>
      <TextField id='standard-basis' label='Email' autoFocus required fullWidth/>
   </div> <br></br>
 
 <div>
-<label>Password</label>
+<label id="password">Password</label>
    <TextField id='standard-basis' label='Password' type="password" autoFocus required  margin='normal' fullWidth/>
 </div><br></br>
 </section>
