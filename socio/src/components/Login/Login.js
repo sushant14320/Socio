@@ -44,7 +44,7 @@ class Login extends Component {
 
 <div>
 <label>Password</label>
-   <TextField id='standard-basis' label='Password' autoFocus required  margin='normal' fullWidth/>
+   <TextField id='standard-basis' label='Password' type="password" autoFocus required  margin='normal' fullWidth/>
 </div><br></br>
 </section>
 <div>
@@ -57,13 +57,13 @@ class Login extends Component {
 {/* Sign with Social handle */}
  <div id='lo'>
         <p>Or Sign in with</p><br></br>
-      <a
+      {/* <a
         href="https://www.youtube.com/c/jamesqquick"
         className="youtube social"
       >
         <FontAwesomeIcon icon={faYoutube} size="2x" style={{color:'red'}}/>
-      </a>
-      &nbsp; &nbsp; &nbsp; &nbsp;
+      </a> */}
+     &nbsp; &nbsp;
       <a
         href="https://www.facebook.com/learnbuildteach/"
         className="facebook social"
