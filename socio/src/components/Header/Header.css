@@ -35,13 +35,19 @@
 } */
 
  #onhoverS:hover{
-    background-color: rgba(243, 237, 237, 0.9);
-    color: green;
+    background: rgba(243, 237, 237, 0.9);
+    color: black;
 }
+
+#onhoverL:hover{
+    background: rgba(243, 237, 237, 0.9);
+    color: black;
+}
+
 
 .logo{
     display: block;
-    color: rgba(48, 39, 179, 0.637);
+    color: silver;
     text-align: center;
     padding: 12px 14px;
     font-size: 45px;
@@ -52,16 +58,18 @@
     letter-spacing: 4px;
     text-decoration: none;
     font-family: "Josefin Sans", sans-serif;
-		background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
+		/* background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
 		background-size: auto auto;
 		background-clip: border-box;
 		background-size: 200% auto;
 		color: rgb(7, 6, 6);
 		background-clip: text;
-		/* text-fill-color: transparent; */
+		
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		animation: textclip 1.5s linear infinite;
+        animation: textclip 1.5s linear infinite; */
+        
+        /* text-fill-color: transparent; */
     }
 
     @keyframes textclip {
