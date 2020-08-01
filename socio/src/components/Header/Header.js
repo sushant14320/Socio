@@ -3,7 +3,7 @@ import{
     NavLink}
 from 'react-router-dom';
 import './Header.css';
-import socio from '../socio.png';
+//import socio from '../socio.png';
 
 
 class Header extends Component {

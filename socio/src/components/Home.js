@@ -47,8 +47,8 @@ class Home extends Component {
 
                   <div className='feature'>
                            <div className='feature1'>
-                                  <h3>Multiple Platforms !</h3> <br/>
-                                  <p>
+                                  <h3>Multiple Platforms !</h3> 
+                                  <p className="mulPara">
                                   You can find social media platforms here
                                   like facebook and twitter, we have included these two famous
                                   social media platforms
@@ -56,15 +56,18 @@ class Home extends Component {
                            </div>  
 
                            <div className='feature2'>
-                              <h3>Anywhere Anytime !</h3><br/>
-                              <p>
+                              <h3>Anywhere Anytime !</h3>
+                              < p className="mulPara">
                                   No need to switch between devices and accounts, we're available on all the devices.
                                   You can create your content anywhere on any device
                               </p>
                           </div>
-                  </div>                   
+                              
+                  </div>     
+                  <br></br><br></br><br></br><br></br><br></br>        
                   </div>            
-                
+                 
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br/><br/><br/><br/>
             {/* <section>
             <video src={smoke} autoPlay muted></video>
                 <h1>
@@ -75,8 +78,9 @@ class Home extends Component {
                     <span>O</span>
                 </h1>
             </section> */}
-          
-          </div>
+             
+              </div>
+ 
          );
     }
 }

@@ -22,7 +22,7 @@
     font-size: 25px;
     float: right;
     text-decoration: none;
-    margin-top: -39px;
+    margin-top: -49px;
     border: 3px solid #cfcfcf;
     border-radius: 37px;
     margin-left: 35px;
@@ -52,6 +52,7 @@
     padding: 12px 14px;
     font-size: 45px;
     float: left;
+    margin-left: 20px;
     margin-top: -58px;
     font-weight: bolder;
     font-weight: 700;
