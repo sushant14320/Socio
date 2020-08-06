@@ -2,15 +2,15 @@
 /*BASIC SETUP*/
 /*-----------------------------------------------------------*/
 * {
-    
+    /* background-color: #000; */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-image: url(images/land3.jpg);
+    /* overflow: hidden; */
+        /* box-sizing: border-box; */
+    /* background-image: url(images/land3.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat; */
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     }
     
@@ -19,47 +19,22 @@
     /*-----------------------------------------------------------*/
     /*REUSABLE COMPONENTS*/
     /*-----------------------------------------------------------*/
-    
+   .landimg img{
+       width:1349px;
+       height:650px;
+   }
     .hnavbar{
         position: relative;
         top : 0;
         width:100%;
-        overflow-x: hidden;
     }
-    .Title{
-        position: relative;
-        top:7.5px;
-        font-weight: bold;
-        padding-left: 40px;
-        padding-top: 15px;
-        padding-bottom: 10px;
-        overflow-x: hidden;
-       
-    }
-    /* .Title h1{
-        color: rgba(225,225,225,.1); 
-        background-image: url(images/smoke5.jpg);
-        background-repeat: repeat-x; 
-        font-size: 55px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        -webkit-background-clip: text;
-        animation: animate 15s linear infinite;
-    } */
-@keyframes animate{
-    0%{
-        background-position: left 0px top 10px;
-    }
-    40%{
-        background-position: left 800px top 10px;
-    }
-}
+  
 
     .hrow{
         max-width: 1140px;
         margin: 0 auto; 
         position: relative;
         bottom: 1122px;
-        overflow-x: hidden;
     }
     .landing{
         background-color: #fff;
@@ -68,12 +43,10 @@
         font-size: 20px;
         font-weight: 300;
         text-rendering: optimizeLegibility;
-        
     }
     
     section{
         padding: 80px 0;
-        overflow-x: hidden;
     }
     
     /*-------------HEADINGS-----------*/
@@ -119,25 +92,22 @@
     }
     /*---------PARAGRAPHS-----------*/
     .long-description p{
-        color: white;
+        color: black;
         width: 600px;
         position: relative;
-        top:450px;
+        bottom:280px;
         left:28%;
-        
         text-align: center;
         align-items: center;
-        overflow-x: hidden;
-       
+        font-family: Arial, Helvetica, sans-serif;
     }
     .desc-head h2{
-        color: white;
+        color: #184269;
         position: relative;
-        top:400px;
+        bottom:310px;
         left:460px;
         font-size: 36px;
-        font-family: cursive; 
-        overflow-x: hidden;   
+        font-family: cursive;    
     }
     
     /*---------BUTTONS-----------*/
@@ -198,7 +168,6 @@
         background-size: cover;
         background-position: center;
         height: 100vh;
-        overflow-x: hidden;
     }
     
     .navheader{
@@ -207,24 +176,22 @@
         background-color: #fff;
         background-size: cover;
         background-position: center;
-        overflow-x: hidden;
     }
     
     .mainhead h1{
         color: white;
         font-family: cursive;
         position: relative;
-        top:250px;
+        bottom:520px;
         left:40px;
         font-size: 45px;
-        overflow-x: hidden;
     }
     
     .main-nav{    
          float: right;
          list-style: none;
          position: relative;
-         top: 15px;
+         bottom: 725px;
     }
     
     .main-nav li{
@@ -234,7 +201,13 @@
          position: relative;
          left:140vh; 
     }
-    
+    .Title{
+        position: relative;
+        bottom:640px;
+        font-size: 60px;
+        margin-left: 30px;
+        letter-spacing: 0.1em;
+    }
    
     .hnav-ani:link,
     .hnav-ani:visited{
@@ -339,135 +312,205 @@
         flex-direction: row;
         font-family: cursive;
         position: relative;
-        top:760px;
+        bottom:80px;
     } 
     
    .feature1 {    
-       color: white;
-       background: transparent;
-       width:320px;    
+       color: black;
+       width:320px;   
+       height:280px; 
        position: relative;
        left:200px;
-       bottom: 20px; 
        border: 2px solid transparent;
        border-image: linear-gradient(235deg,#e5e920,#010615,#34a8d6);
        border-image-slice: 1;
-       padding-top: 18px;
-       padding-bottom: 35px;
-       padding-left: 30px;
+       padding-top: 22px;
+       padding-left: 22px;
        padding-right: 10px;
-       overflow-x: hidden;
    }
-
+   .feature1 h3{
+       font-size: 30px;
+   }
+   .feature1 p{
+    position: relative;
+    bottom:35px;
+}
    .feature2 {
-    background-color: transparent;
-    color: white;
+    color: black;
     position: relative;
     left:500px;
-    bottom: 20px;
     width:320px;
+    height:280px; 
     border: 2px solid transparent;
     border-image: linear-gradient(235deg,#dd3181,#010615,#46f040);
     border-image-slice: 1;
     padding-top: 20px;
-    padding-left: 25px;
+    padding-left: 22px;
     padding-right: 20px;
-    overflow-x: hidden;
+}
+.feature2 h3{
+    font-size: 29px;
+}
+.feature2 p{
+ position: relative;
+ bottom:35px;
 }
 
 .allapps{
     position: relative;
-    top:720px;
-    left:555px;
-    overflow-x: hidden;
-}
-.cursor{
-    position: relative;
-    top:152px;
-    left:349px;
-    width:50px;
-    height:50px;
-    transform: rotate(325deg);
-    overflow-x: hidden;
-}
-
-video{
-    width: 180px;
-    height: 100px;
-    position: relative;
-    bottom:815px;
-    left:30px;
-    background: transparent;
-    border-radius: 40px;
-    margin-top: 20px;
+    bottom:70px;
+    left:540px;
 }
 
 
-h1 span{
-    opacity: 0;
-    display: inline-block;
-    animation: animate 1s linear forwards;
-    color: silver;
-    position: relative;
-    bottom: 900px;
-    transform: translateY(-50%);
-    letter-spacing: 0.1em;
-    color: #ddd;
-    background: transparent;
-    left:45px;
-    overflow-x: hidden;
-}
-@keyframes animate{
-    0%{
-        opacity: 0;
-        transform: rotateY(90deg);
-        filter: blur(10px);
-    }
-    100%{
-        opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0);
-    }
-}
-.sv{
-    position: relative;
-    top:800px;
+
+
+
+/* login styles */
+
+.Maincontainer
+{
+    color: white;
+    background-color:whitesmoke;
+    width: 100%;
+   height: auto;
 }
 
-h1 span:nth-child(1){
-    animation-delay: 1s;
-}
-h1 span:nth-child(2){
-    animation-delay: 1.5s;
-}
-h1 span:nth-child(3){
-    animation-delay: 2.5s;
-}
-h1 span:nth-child(4){
-    animation-delay: 3.3s;
-}
-h1 span:nth-child(5){
-    animation-delay: 4.3s;
+.welcome{
+color: rgb(113, 112, 119);
+margin-left: 180px;
+margin-top: 60px;
 }
 
-/* div{
+label{
+    color: white;
+}
+
+#standard-basis{
+    color: white;
+    /* background-color: white; */
+    border: 2px solid silver;
+}
+
+#sociologo
+{
+width:15%;
+margin-left: 96px;
+position: relative;
+bottom:64px;
+
+}
+
+#logoSocio{
+    background-color: white;
+}
+
+#btnLogIn{
+  display: inline-block;
+  color:white;
+  font-size: large;
+  width:27%;
+  border-radius: 2em;
+  margin-left: -49px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 20px;
+  left:150px;
+}
+#btnLogIn:hover{
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#btnCancel{
+  display: inline-block;
+  color:white;
+  font-size: large;
+  width:27%;
+  border-radius: 2em;
+  margin-left: -49px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  bottom: 67px;
+  left:350px;
+}
+#btnCancel:hover{
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+ #back{
     
-  overflow-x: hidden;
-} */
-
-#main_wrapper{
-    margin-top: -10px;
+    color:white;
+    font-size: large;
+    border-radius: 2em;
+    border: 1px solid white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right:380px;
+    bottom:800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px; 
+ } 
+ #back:hover{
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+#forgetPass
+{
+  text-decoration: none;
+  position: relative;
+  left:50px;
+  bottom:260px;
 }
 
-#Tag_wrapper{
-    margin-top: -40px;
+
+.Field_section{
+    border: 2px solid silver;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    bottom: 50px;
+    border-radius: 7px;
 }
 
-.empty{
-    padding-bottom: 500px;
-    background-color: red;
+label{
+    color: white;
 }
 
-.mulPara{
-    margin-top:-8px;
+.para_login{
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 5px 2px 4px #330c0c;
+    font-family: cursive;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.No_acc{
+    margin-left: 135px;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 157px;
+    font-family: cursive;
+}
+
+#lo{
+    color: white;
+    
+}
+.email{
+    color: rgb(113, 112, 119);
+}
+.password{
+   
+        color: rgb(113, 112, 119);
+   
 }
