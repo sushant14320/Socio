@@ -8,7 +8,9 @@ import Header from './components/Header/Header';
 import Signup from './components/Signup/Signup';
 import Login from './components/Login/Login';
 import Home from './components/Home';
-import firebase from './components/Services/firebaseConfig';
+import Dashboard from './components/Connection/Dashboard';
+//import Dashboard from '../src/components/Connection/Dashboard';
+//import firebase from './components/Services/firebaseConfig';
 // import './App.css';
 
 //import logo from './logo.svg';
@@ -19,25 +21,9 @@ class App extends Component {
       user:{}
      }
   }
-  componentDidMount(){
-    this.authListener();
-  }
   
    
-  authListener(){
-    firebase.auth().onAuthStateChanged((user)=>{
-      if(user){
-        this.setState({
-          user
-        })
-      }
-      else{
-        this.setState({
-          user:null
-        })
-      }
-    })
-  }
+  
 
  
 
@@ -58,11 +44,16 @@ class App extends Component {
    
         <Route path="/SignUp" component={Signup}/>
         <Route path="/Login" component={Login}/>
+        <Route path="/dashboard" component={Dashboard}/>
     
-       
+        
       </Switch>
+      
     </div>
+    
   </Router>
+        
+  
   </div>
   );
 }

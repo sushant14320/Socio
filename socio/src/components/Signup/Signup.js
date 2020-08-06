@@ -1,159 +1,128 @@
-import React,{Component}from 'react';
+import React, { useState,useContext } from "react";
 import './Signup.css';
-import { Container } from '@material-ui/core';
+import {withRouter} from 'react-router';
+import { Link ,Redirect} from "react-router-dom";
+import {firebaseApp} from '../Services/firebaseConfig';
+import {AuthContext } from '../Context/Authentication';
 import logo from '../SocioLogo.png';
-import TextField from '@material-ui/core/TextField';
-import {Link} from'react-router-dom';
+import { Container } from '@material-ui/core';
+import Login from '../Login/Login';
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-    
-//     faFacebook,
-//     faTwitter,
-    
-    
-//   } from "@fortawesome/free-brands-svg-icons";
+function Signup({history}) {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
 
-class Signup extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-           email:'',
-           password :''
-         }
+  const handleSignUp=(e)=>{
+      e.preventDefault();
+      console.log(name,email,password);
+      firebaseApp
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then(()=>{
+        const user = firebaseApp.auth().currentUser;
+        user
+          .updateProfile({ displayName: name })
+          .then(() => {
+            history.push('/');
+          })
+          .catch((err) => {
+            throw Error(err);
+          });
+      })
+      .catch((err) => {
+        alert(err.message);
+      });
     }
-
-    
-
-
-
-
-
-    render() { 
+      const { currentUser } = useContext(AuthContext);
+      if (currentUser) {
+        return <Redirect to="/dashboard" />;
+      }
+  
+   
         return ( 
-            <div>
+            <div onSubmit={handleSignUp}>
                <div className='Maincontainer'>
                <Container maxWidth='sm'>
         {/* <p>Post Anywhere Anytime...</p> */}
-         <h1 className="welcome">SignUp here</h1>
+         <h1 className="welcome">Signup Here</h1>
          <div id="logoSocio">
          <img src={logo} alt="logo" id='sociologo'/>
-         </div>
+         </div> 
  
          <p className="para_login">SignUp to get registered</p>
-         <i class="fas fa-home"></i>
-<br></br><br></br>
+<br></br>
 
 <form>
 
 <section className="Field_section">
+
+<div>
+        <label className="name">Name</label>
+        <input
+                   name="name"
+                   type="text"
+                   onChange={(e)=>setName(e.target.value)} 
+                   value={name}
+                   className="form-control"
+                   placeholder="Jack Winston"
+                 />
+  </div> <br/><br/>
             
     <div>
-        
-        <label id="email">Email</label><br></br><br></br>
-   
-     {/* <TextField id='standard-basis' label='Email' autoFocus required fullWidth/> */}
-     <input
-                  name="email"
-                  type="text"
-                  className="form-control"
-                  placeholder="mail@gmail.com"
-                  value={this.state.email}
-                  onChange={this.HandleE}
-                />
-  
-  
-    </div> <br></br>
+        <label className="email">Email</label>
+        <input
+                   name="email"
+                   type="text"
+                   onChange={(e)=>setEmail(e.target.value)} 
+                   value={email} 
+                   className="form-control"
+                   placeholder="mail@gmail.com"
+                 />
+  </div> <br/><br/>
 
 <div>
-
-
-<label id="password">Password</label>
+<label className="password">Password</label>
+<input
+                   name="password"
+                   type="password"
+                   onChange={(e)=>setPassword(e.target.value)} 
+                   value={password} 
+                   className="form-control"
+                   placeholder="**********"
+                 />
   
-   {/* <TextField id='standard-basis' label='Password' type="password" autoFocus required  margin='normal' fullWidth /> */}
-   <input
-                    name="password"
-                    type="password"
-                    className="form-control"
-                    placeholder="**********"
-                    value={this.state.password}
-                    onChange={this.HandleP}
-                  />
-
-
 </div><br></br>
 
-
-
-
-<div>
-<label id="password">Confirm Password</label>
-   
-   
-   {/* <TextField id='standard-basis' label='Password' type="password" autoFocus required  margin='normal' fullWidth/> */}
-
-   <input
-                    name="password"
-                    type="password"
-                    className="form-control"
-                    placeholder="**********"
-                    value={this.state.password}
-                    onChange={this.HandleP}
-                  />
-
-</div><br></br>
 </section>
+<div className="buttons">
 <div>
-   <button id='btnSignup'>SignUp</button>
+   <button id='btnLogIn'>Signup</button>
 </div>   
+<div>
+   <button id='btnCancel'>Cancel</button>
+</div> 
+</div>
 <br></br>
- {/* <a href={'#'} id='forgetPass'>Forget Password ?</a> */}
+ <a href={'#'} id='forgetPass'>Forget Password ?</a>
  <br></br>
 
-{/* Sign with Social handle */}
- {/* <div id='lo'>
-        <p>Or Sign in with</p><br></br>
-     
-     &nbsp; &nbsp;
-      <a
-        href="https://www.facebook.com/learnbuildteach/"
-        className="facebook social"
-      >
-        <FontAwesomeIcon icon={faFacebook} size="2x" />
-      </a>
-
-      &nbsp; &nbsp; &nbsp; &nbsp;
-
-      <a href="https://www.twitter.com/jamesqquick" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size="2x" style={{color:'rgb(65, 154, 184)'}} />
-      </a>
-
-      &nbsp; &nbsp; &nbsp; &nbsp;
-
-      
-      
-    
- </div> */}
 <br></br><br></br>
+<div className="back">
+<Link id='back' to='/'>Back</Link>
+</div>
  
 {/* If user don't have an account */}
-{/* <p className="No_acc">Don't have an account? <a href={<Signup/>} style={{textDecoration:'none'}}>Sign Up</a></p> */}
+<p className="No_acc">Have an account? <a href={<Login/>} style={{textDecoration:'none'}}>Login</a></p>
 <br></br><br></br>
  </form> 
- 
- 
- <div className="backSign">
-      
-      <Link id='backSignup' to='/'>Home</Link>
- 
- </div>
    </Container>
 
                  </div>  
             </div>
          );
     }
-}
+
  
-export default Signup;
+export default withRouter(Signup)

@@ -1,4 +1,5 @@
 import firebase from 'firebase'
+require('firebase/auth')
 var firebaseConfig = {
     apiKey: "AIzaSyAmnMVG5eUpH4VLBbNeKRtIliWbBsAlP_s",
     authDomain: "socio-3ac19.firebaseapp.com",
@@ -10,7 +11,10 @@ var firebaseConfig = {
     measurementId: "G-JKJKCZHCP1"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
-  export default firebase;
+  // firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+      
+  // export default firebase;
+  export const firebaseApp = firebase.initializeApp(firebaseConfig);
+ 
+  export default firebaseApp.firestore();
