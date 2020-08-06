@@ -47,9 +47,9 @@ function Signup({history}) {
                <Container maxWidth='sm'>
         {/* <p>Post Anywhere Anytime...</p> */}
          <h1 className="welcome">Signup Here</h1>
-         <div id="logoSocio">
+        
          <img src={logo} alt="logo" id='sociologo'/>
-         </div> 
+     
  
          <p className="para_login">SignUp to get registered</p>
 <br></br>
@@ -109,8 +109,8 @@ function Signup({history}) {
  <br></br>
 
 <br></br><br></br>
-<div className="back">
-<Link id='back' to='/'>Back</Link>
+<div className="backSignup">
+<Link id='backSignup' to='/'>Back</Link>
 </div>
  
 {/* If user don't have an account */}

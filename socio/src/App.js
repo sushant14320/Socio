@@ -22,39 +22,20 @@ class App extends Component {
      }
   }
   
-   
-  
-
- 
-
-
   render() {
 
   return (
-<div>
+
   
-  <Router>
- 
-    <Header/>
-    <br></br>
-    <div>
-      <Switch>
-        
+    <Router>
         <Route path="/"  exact component={Home}/>
-   
         <Route path="/SignUp" component={Signup}/>
         <Route path="/Login" component={Login}/>
         <Route path="/dashboard" component={Dashboard}/>
-    
-        
-      </Switch>
-      
-    </div>
-    
-  </Router>
+    </Router>
         
   
-  </div>
+ 
   );
 }
 }

@@ -6,6 +6,7 @@ import {AuthContext } from '../Context/Authentication';
 import { withRouter, Redirect, Link} from "react-router-dom";
 import Signup from '../Signup/Signup';
 import firebase from 'firebase';
+import land from '../images/land3.jpg'
 import {firebaseApp} from '../Services/firebaseConfig';
 
 
@@ -38,15 +39,18 @@ import {firebaseApp} from '../Services/firebaseConfig';
   }
    
         return ( 
-            <div>
+            <div className="login">
+              {/* <div className="landimg">
+                 <img src={land} alt='img' />
+                 </div> */}
               
                <div className='Maincontainer'>
                <Container maxWidth='sm'>
         {/* <p>Post Anywhere Anytime...</p> */}
          <h1 className="welcome">Login Here</h1>
-         <div id="logoSocio">
+        
          <img src={logo} alt="logo" id='sociologo'/>
-         </div> 
+         
  
          <p className="para_login">Login to your registered account</p>
 <br></br>
